@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --oscuro:#2b2d42;
+    --claro1:#8d99ae;
+    --claro2:#bdc6d1;
+    --body:#edf2f4;
+    --rojo1:#e20029;
+    --rojo2:#cc0b2d;
+    --rojo3L:#a3142c;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+/*------------------NAV------------------*/
+
+.nav{
+    display: flex;
+    background-color: var(--oscuro);
+    justify-content: space-around;
+    padding: 1rem;
+}
+.nav__ul a{
+    color:#edf2f4;
+    margin: 1rem;
+    text-decoration: none;
+}
+.nav__ul{
+    list-style: none;
+    display: flex;
+    margin: 1.5rem;
+}
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+
