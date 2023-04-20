@@ -12,33 +12,179 @@
     --rojo1:#e20029;
     --rojo2:#cc0b2d;
     --rojo3L:#a3142c;
-    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+body{
+    background: linear-gradient(0deg, #8d99ae 10%, #f5e8f80c 90%)
+}
+.bg_oscuro{
+    background-color: var(--oscuro);
 }
 
 /*------------------NAV------------------*/
 
-.nav{
-    display: flex;
-    background-color: var(--oscuro);
-    justify-content: space-around;
-    padding: 1rem;
+/*-----------------main---------------------*/
+.frames{
+    padding-top: 5rem;
+    filter: grayscale(45%);
+-webkit-filter: grayscale(45%);
+-moz-filter: grayscale(45%);
 }
-.nav__ul a{
-    color:#edf2f4;
-    margin: 1rem;
+
+.card_main{
+    font-size: 1.2rem;
+    background-color: edf2f4;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight:600;
+}
+h2{
+    font-size: 2.3rem;
+    font-weight:600;
+    color: #a3142c;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.114);
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight:600;
+    color: #a3142c;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.334);
+}
+p{
+    font-weight: 600;
+}
+
+
+.card_group{
+    background-color: #edf2f4;
+}
+/*-----------------imagen principal---------------------*/
+.cont_card_group{
+    background-color: var(--claro1);
+}
+.cont_imgpr_contacto{
+    background-image: url(https://www.ke.com.pk/assets/uploads/2016/06/Contact-us.jpg);
+}
+.cont_imgpr_nosotros{
+    background-image: url(https://th.bing.com/th/id/R.ed811a2196fe81ef116b118092441a01?rik=Id4qNwP7l8AJmw&riu=http%3a%2f%2fyilink-medical.com%2fcn%2fimages%2fpantner.jpg&ehk=PrpLhJ68h9nINapitwRsrXGC%2b6ARzsi34WKGw%2bZTyCw%3d&risl=&pid=ImgRaw&r=0);
+}
+.cont_imgpr_marcas{
+    background-image: url(https://th.bing.com/th/id/R.ce3179c91c285c1c15dae57c894681aa?rik=aCt3kdAvaAdiNg&pid=ImgRaw&r=0);
+}
+.cont_imgpr_servicios{
+    background-image: url(https://th.bing.com/th/id/R.c0bb46589ef49269669be82f04c206de?rik=Hmg%2fsFyckt6Wzg&riu=http%3a%2f%2ftalleresalvarezmotor.com%2fwp-content%2fuploads%2f2021%2f06%2fauto-repair-1024x682-1.jpg&ehk=%2bG3Nvl8eYZGCCMDr8SUzG224YgMqlZ5ISAo3vB7nTHk%3d&risl=&pid=ImgRaw&r=0);
+}
+.cont_img_pr{
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    margin-top: 5.7rem;
+}
+.cont_pr{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #edf2f4;
+    
+}
+.lista{
+    display: flex;
+}
+.lista p,.lista a{
     text-decoration: none;
+    color: var(--claro2);
+    margin: 5px;
 }
-.nav__ul{
-    list-style: none;
+/*-----------------paginas marcas---------------------*/
+
+
+
+/*-----------------form pag contacto---------------------*/
+.cont_form{
+    background-color: #bdc6d1;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    border: 3px solid var(--claro1);
+}
+.cont_contact{
     display: flex;
-    margin: 1.5rem;
+    background-color: #bdc6d1;
+    justify-content: space-evenly;
+}
+.info_contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center ;
+}
+.nombres_contacto{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cont_boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botoncito{
+    background-color: var(--claro1);
+    color: var(--body);
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.cont_mapa{
+    display: flex;
 }
 
-/*--------------------------------------*/
-/*--------------------------------------*/
+/*------------------footer--------------------*/
+.footer{
+    background-color: var(--oscuro);
+    color: #edf2f4;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 1rem;
+}
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 
+@media screen and (max-width: 768px){
+    .cont_contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_contact{
+        padding-top: 1rem;
+    }
+    .cont_card_nosotros{
+        text-align: center;
+    }
+}
 
+
+@media screen and (max-width: 450px){
+    .nav_contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }

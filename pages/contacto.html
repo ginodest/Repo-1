@@ -5,58 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Chispitas</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,900;1,200&display=swap" rel="stylesheet">
 <body>
     <header>
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="/index.html"><img src="/assets/img/logo-red.png" alt="logo"></a>
-            </div>
-            <div>
-                <ul class="nav__ul">
-                    <li> <a href="/index.html">inicio</a></li>
-                    <li> <a href="nosotros.html">nosotros</a></li>
-                    <li> <a href="marcas.html">marcas</a></li>
-                    <li> <a href="servicios.html">servicios</a></li>
-                    <li> <a href="#">contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg_oscuro fixed-top">
+            <div class="container nav_contenedor">
+                <a class="navbar-brand" href="#"><img src="/assets/img/logo-red.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="/pages/marcas.html">Marcas</a>
+                        <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                        <a class="nav-link active" href="#">Contacto</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-
-    <div class="contenedor_formulario">
-        <h1>Contacto</h1>
-        <form class="formulario">
-            <fieldset>
-                <legend>Contáctame</legend>
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre</label>
-                        <input class="input-text" type="text" placeholder="Nombre">
-                    </div>
-                    <div class="campo">
-                        <label>Telefono</label>
-                        <input class="input-text" type="tel" placeholder="Teléfono">
-                    </div>
-                    <div class="campo">
-                        <label>Correo</label>
-                        <input class="input-text" type="email" placeholder="E-mail">
-                    </div>
-                    <div class="campo">
-                        <label>Mensaje</label>
-                        <textarea></textarea>
-                    </div>
-                    <div class="enviar">
-                        <input class="boton w-100" type="submit" value="Enviar">
-                    </div>
+    <main>
+        <div class="cont_img_pr cont_imgpr_contacto">
+            <div class="cont_pr">
+                <h1>Contacto</h1>
+                <div class="lista">
+                    <a href="/index.html">Inicio</a>
+                    <p>/</p>
+                    <p aria-current="page">Contacto</p>
                 </div>
-            </fieldset>
+            </div>
+        </div>
+        <div class="container d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#a3142c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="9" cy="7" r="4" />
+                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 11h6m-3 -3v6" />
+            </svg>
+            <h2 class="container mb-5 mt-5">Contactanos!</h2>
+        </div>
+        <form class="container cont_form" action="#">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="cont_boton">
+                <input class="botoncito" type="submit" value="Enviar">
+            </div>
             
         </form>
-    </div>
+        
+        
 
-
-
+        <div class="container-sm p-4 mt-5 mb-5 shadow cont_contact">
+            <div class="cont_mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13630.456888677909!2d-64.12271873694061!3d-31.34202551958277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432971ccb193d05%3A0x5aa375228eedfba!2sChispita!5e0!3m2!1ses-419!2sar!4v1681684445928!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info_contact">
+                <h3>Ubicacion</h3>
+                <h5>Córdoba</h5>
+                <h5>Villa Esquiu</h5>
+                <h5>E.Gutierrez Laulne</h5>
+                <h3>Telefonos</h3>
+                <h5>+54 3513915805</h5>
+                <h5>+470 8468</h5>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Taller Chispitas 2023</p>
+            <p>Todos los derechos Reservados</p>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
