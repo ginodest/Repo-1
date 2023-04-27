@@ -1,0 +1,64 @@
+.cont_imgpr_contacto{
+    background-image: url(https://www.ke.com.pk/assets/uploads/2016/06/Contact-us.jpg);
+}
+.cont_form{
+    background-color: #bdc6d1;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    border: 3px solid var(--claro1);
+}
+.cont_contact{
+    display: flex;
+    background-color: #bdc6d1;
+    justify-content: space-evenly;
+}
+.info_contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center ;
+}
+.nombres_contacto{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cont_boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botoncito{
+    background-color: var(--claro1);
+    color: var(--body);
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.cont_mapa{
+    display: flex;
+}
+
+@media screen and (max-width: 450px){
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cont_contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_contact{
+        padding-top: 1rem;
+    }
+}
+
+

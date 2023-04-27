@@ -1,0 +1,10 @@
+.bg_oscuro{
+    background-color: $oscuro;
+}
+
+@media screen and (max-width: 450px){
+    .nav_contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+}
