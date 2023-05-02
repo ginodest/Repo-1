@@ -189,4 +189,20 @@ main .cont_imgpr_marcas {
   }
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=styles.css.map */
+=======
+
+@media screen and (max-width: 450px){
+    .nav_contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+>>>>>>> 2daPreEntrega
