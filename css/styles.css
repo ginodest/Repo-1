@@ -9,22 +9,26 @@ body {
   background: linear-gradient(0deg, #8d99ae 10%, rgba(245, 232, 248, 0.0470588235) 90%);
 }
 
-.bg_oscuro {
+header .bg_oscuro {
   background-color: #2b2d42;
 }
-
 @media screen and (max-width: 450px) {
-  .nav_contenedor {
+  header .nav_contenedor {
     display: flex;
     flex-direction: column;
+    align-self: center;
   }
 }
-.footer {
+
+body .footer {
   background-color: #2b2d42;
   color: #edf2f4;
   display: flex;
   justify-content: space-around;
   padding-top: 1rem;
+}
+body .footer p {
+  color: #edf2f4;
 }
 
 h1 {

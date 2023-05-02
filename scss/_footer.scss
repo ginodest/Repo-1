@@ -1,7 +1,13 @@
-.footer{
-    background-color: $oscuro;
-    color: $body;
-    display: flex;
-    justify-content:space-around;
-    padding-top: 1rem;
+body{
+    .footer{
+        background-color: $oscuro;
+        color: $body;
+        display: flex;
+        justify-content:space-around;
+        padding-top: 1rem;
+        p{
+            color: $body;
+        }
+    }
 }
+
