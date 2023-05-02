@@ -19,6 +19,14 @@ body {
     flex-direction: column;
   }
 }
+.footer {
+  background-color: #2b2d42;
+  color: #edf2f4;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -92,12 +100,21 @@ main .cont_card_group {
   background-color: #8d99ae;
 }
 
-.footer {
-  background-color: #2b2d42;
-  color: #edf2f4;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1rem;
+main .cont_imgpr_nosotros {
+  background-image: url(https://th.bing.com/th/id/R.ed811a2196fe81ef116b118092441a01?rik=Id4qNwP7l8AJmw&riu=http%3a%2f%2fyilink-medical.com%2fcn%2fimages%2fpantner.jpg&ehk=PrpLhJ68h9nINapitwRsrXGC%2b6ARzsi34WKGw%2bZTyCw%3d&risl=&pid=ImgRaw&r=0);
+}
+@media screen and (max-width: 768px) {
+  main .cont_card_nosotros {
+    text-align: center;
+  }
+}
+
+main .cont_imgpr_marcas {
+  background-image: url(https://th.bing.com/th/id/R.ce3179c91c285c1c15dae57c894681aa?rik=aCt3kdAvaAdiNg&pid=ImgRaw&r=0);
+}
+
+.cont_imgpr_servicios {
+  background-image: url(https://th.bing.com/th/id/R.c0bb46589ef49269669be82f04c206de?rik=Hmg%2fsFyckt6Wzg&riu=http%3a%2f%2ftalleresalvarezmotor.com%2fwp-content%2fuploads%2f2021%2f06%2fauto-repair-1024x682-1.jpg&ehk=%2bG3Nvl8eYZGCCMDr8SUzG224YgMqlZ5ISAo3vB7nTHk%3d&risl=&pid=ImgRaw&r=0);
 }
 
 .cont_imgpr_contacto {
