@@ -1,52 +1,62 @@
-.cont_imgpr_contacto{
-    background-image: url(https://www.ke.com.pk/assets/uploads/2016/06/Contact-us.jpg);
+main{
+    .cont_imgpr_contacto{
+        background-image: url(https://th.bing.com/th/id/R.839c6cb93f6fa3f2d4212c8184e2a3fa?rik=1tTiAzw55n8Rfw&riu=http%3a%2f%2fcocinasintegralesgioserman.com%2fimages%2fcontactanos.jpg&ehk=vKTNLyWEz2fcTipKiD6H0tqO5tr8wAtZrB6w1C1IXDI%3d&risl=&pid=ImgRaw&r=0);
+    }
+    .cont_form{
+        background-color: $claro2;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+        border: 3px solid $claro2;
+    }
+    .cont_boton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .botoncito{
+            background-color: $claro1;
+            width: 10rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            &:hover{
+                background-color: $claro2;
+                transition: all 200ms ease;
+            }
+        }
+    }
+    .cont_contact{
+        display: flex;
+        background-color: $claro2;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        .cont_mapa{
+            display: flex;
+            .mapa{
+                border-radius: 5px;
+            }
+
+        }
+        .info_contact{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center ;
+        }
+        
+    }
 }
-.cont_form{
-    background-color: #bdc6d1;
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
-    border: 3px solid var(--claro1);
-}
-.cont_contact{
-    display: flex;
-    background-color: #bdc6d1;
-    justify-content: space-evenly;
-}
-.info_contact{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center ;
-}
-.nombres_contacto{
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.cont_boton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.botoncito{
-    background-color: var(--claro1);
-    color: var(--body);
-    width: 10rem;
-    justify-content: center;
-    align-items: center;
-}
-.cont_mapa{
-    display: flex;
-}
+
 
 @media screen and (max-width: 450px){
+    .mapa{
+        width: 265px;
+    }
 
     .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexxboxx(center,center,column)
     }
 }
 
@@ -55,10 +65,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .info_contact{
+            padding-top: 1rem;
+        }
     }
-    .info_contact{
-        padding-top: 1rem;
-    }
+    
 }
 
 

@@ -1,0 +1,7 @@
+@mixin flexxboxx($justificacion,$alineacion,$direccion){
+    display:flex;
+    justify-content:$justificacion;
+    align-items:$alineacion;
+    flex-direction:$direccion;
+} 
+/*esta incluido en la pagina de _utilidades ;)*/

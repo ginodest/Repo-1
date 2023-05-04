@@ -1,12 +1,26 @@
 header{
     .bg_oscuro{
         background-color: $oscuro;
+        .cont_links{
+            .links{
+                text-transform: uppercase;
+                &:hover{
+                    color: $rojo1;
+                    text-decoration: underline ;
+                    transition: all 500ms ease;
+                }
+            }
+        }
     }
     @media screen and (max-width: 450px){
         .nav_contenedor{
-            display: flex;
-            flex-direction: column;
-            align-self: center;
+            @include flexxboxx(center,center,column);
+            text-align: center;
+            align-content: center;
+            .logo{
+                display: inline-block;
+                margin: 0;
+            }
         }
     }
 }

@@ -1,23 +1,24 @@
 
 h1{
-    font-size: 2.5rem;
-    font-weight:600;
+    font-size: map-get($map: $sizes, $key:h1 );
+    font-weight:map-get($map: $sizes, $key:medium );
 }
 h2{
-    font-size: 2.3rem;
-    font-weight:600;
+    font-size: map-get($map: $sizes, $key:h2 );
+    font-weight:map-get($map: $fuentes, $key:medium ); 
     color:$rojo3;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.114);
 }
 
 h3{
-    font-size: 1.8rem;
-    font-weight:600;
+    font-size: map-get($map: $sizes, $key: h3);
+    font-weight:map-get($map: $fuentes, $key:medium );
     color:$rojo3;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.334);
 }
 p{
-    font-weight: 600;
+    font-size: map-get($map: $sizes, $key: p);
+    font-weight: map-get($map: $fuentes, $key:medium );
 }
 .cont_img_pr{
     background-repeat: no-repeat; 
@@ -34,18 +35,27 @@ p{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
-    color: #edf2f4;
-    
+    color: $body;
+    text-align: center;
+    @include flexxboxx(center,center,column);
 }
 .lista{
     display: flex;
 }
-.lista p,.lista a{
+.lista-a{
     text-decoration: none;
-    color: var(--claro2);
+    color: $claro2;
     margin: 5px;
-}                                                                               
+}    
+.lista-p{
+    @extend .lista-a;
+}      
+
+
+@media screen and (max-width: 768px){
+    .cont_titulo_main{
+        @include flexxboxx(center,center,column);
+        text-align: center;
+    }
+}

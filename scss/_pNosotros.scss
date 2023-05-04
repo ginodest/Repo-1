@@ -2,6 +2,12 @@ main{
     .cont_imgpr_nosotros{
         background-image: url(https://th.bing.com/th/id/R.ed811a2196fe81ef116b118092441a01?rik=Id4qNwP7l8AJmw&riu=http%3a%2f%2fyilink-medical.com%2fcn%2fimages%2fpantner.jpg&ehk=PrpLhJ68h9nINapitwRsrXGC%2b6ARzsi34WKGw%2bZTyCw%3d&risl=&pid=ImgRaw&r=0);
     }
+
+    .cont_card_nosotros{
+        .titulo_card_nosotros{
+            text-transform: uppercase;
+        }
+    }
     @media screen and (max-width: 768px){
         .cont_card_nosotros{
             text-align: center;

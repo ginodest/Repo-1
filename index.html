@@ -15,17 +15,17 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg_oscuro fixed-top">
             <div class="container nav_contenedor">
-                <a class="navbar-brand" href="#"><img src="assets/img/logo-red.png" alt="logo"></a>
+                <a class="navbar-brand logo" href="#"><img src="assets/img/logo-red.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                        <a class="nav-link" href="./pages/marcas.html">Marcas</a>
-                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    <div class="navbar-nav cont_links">
+                        <a class="nav-link  links active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link links" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link links" href="./pages/marcas.html">Marcas</a>
+                        <a class="nav-link links" href="./pages/servicios.html">Servicios</a>
+                        <a class="nav-link links" href="./pages/contacto.html">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -33,29 +33,21 @@
     </header>
     <!-- -------------------------------------Main------------------------------------------ -->
     <main>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/frame1.png" class="d-block w-100 frames" alt="img-frame1">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/frame2.png" class="d-block w-100 frames" alt="img-frame2">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/frame3.png" class="d-block w-100 frames" alt="img-frame3">
+        <div class="cont_carrusel cont_frames">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade mt-2 cont_frames" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> 
+                        <img src="assets/img/frame1.png" class="frames w-100" alt="imgagen de vehiculo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/frame2.png" class="frames w-100" alt="imagen de operario">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/frame3.png" class="frames w-100" alt="imagen de multimetro">
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-
-        
 
         <div class="container card mt-5 bg shadow p-3 mb-5 rounded card_main">
             <div class="row g-0 ">
@@ -73,7 +65,7 @@
                             </svg>
                             <h2 class="card-title mt-2 ms-3">Mas de 30 años de Experiencia</h2>
                         </div>
-                        <p class="card-text ms-4">Nos situamos en la Ciudad de Córdoba, centro geográfico de la República Argentina, Cubrimos una amplia variedad de mantenimiento de vehiculos ya sean regionales o importados. contamos con sistemas de scanner para detectar fallas en las marcas mas importantes de nuestro pais como tambien testing en inyeccion electronica</p>
+                        <p class="card-text ">Nos situamos en la Ciudad de Córdoba, centro geográfico de la República Argentina, Cubrimos una amplia variedad de mantenimiento de vehiculos ya sean regionales o importados. contamos con sistemas de scanner para detectar fallas en las marcas mas importantes de nuestro pais como tambien testing en inyeccion electronica</p>
                         
                     </div>
                 </div>

@@ -3,15 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Contacto - Taller Chispitas</title>
-    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-=======
     <title>Taller Chispitas</title>
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
->>>>>>> 2daPreEntrega
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,40 +14,35 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg_oscuro fixed-top">
             <div class="container nav_contenedor">
-                <a class="navbar-brand" href="#"><img src="../assets/img/logo-red.png" alt="logo"></a>
+                <a class="navbar-brand logo" href="#"><img src="../assets/img/logo-red.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-<<<<<<< HEAD
-                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
-                        <a class="nav-link" href="/pages/marcas.html">Marcas</a>
-                        <a class="nav-link" href="/pages/servicios.html">Servicios</a>
-=======
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        <a class="nav-link" href="marcas.html">Marcas</a>
-                        <a class="nav-link" href="servicios.html">Servicios</a>
->>>>>>> 2daPreEntrega
-                        <a class="nav-link active" href="#">Contacto</a>
+                    <div class="navbar-nav cont_links">
+                        <a class="nav-link links" href="../index.html">Inicio</a>
+                        <a class="nav-link links" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link links" href="marcas.html">Marcas</a>
+                        <a class="nav-link links" href="servicios.html">Servicios</a>
+                        <a class="nav-link links active" href="#">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="cont_img_pr cont_imgpr_contacto">
             <div class="cont_pr">
                 <h1>Contacto</h1>
                 <div class="lista">
-                    <a href="/index.html">Inicio</a>
-                    <p>/</p>
-                    <p aria-current="page">Contacto</p>
+                    <a class="lista-a" href="../index.html">Inicio</a>
+                    <p class="lista-p">/</p>
+                    <p class="lista-p" aria-current="page">Contacto</p>
                 </div>
             </div>
         </div>
-        <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center cont_titulo_main">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="#a3142c" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <circle cx="9" cy="7" r="4" />
@@ -62,15 +51,20 @@
             </svg>
             <h2 class="container mb-5 mt-5">Contactanos!</h2>
         </div>
+
         <form class="container cont_form" action="#">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="escriba su nombre">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="escriba aqui su mensaje" rows="3"></textarea>
             </div>
             <div class="cont_boton">
                 <input class="botoncito" type="submit" value="Enviar">
@@ -82,7 +76,7 @@
 
         <div class="container-sm p-4 mt-5 mb-5 shadow cont_contact">
             <div class="cont_mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13630.456888677909!2d-64.12271873694061!3d-31.34202551958277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432971ccb193d05%3A0x5aa375228eedfba!2sChispita!5e0!3m2!1ses-419!2sar!4v1681684445928!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13630.456888677909!2d-64.12271873694061!3d-31.34202551958277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432971ccb193d05%3A0x5aa375228eedfba!2sChispita!5e0!3m2!1ses-419!2sar!4v1681684445928!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="info_contact">
                 <h3>Ubicacion</h3>

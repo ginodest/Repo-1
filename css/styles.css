@@ -7,33 +7,10 @@
 
 body {
   background: linear-gradient(0deg, #8d99ae 10%, rgba(245, 232, 248, 0.0470588235) 90%);
-}
-
-header .bg_oscuro {
-  background-color: #2b2d42;
-}
-@media screen and (max-width: 450px) {
-  header .nav_contenedor {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
-}
-
-body .footer {
-  background-color: #2b2d42;
-  color: #edf2f4;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1rem;
-}
-body .footer p {
-  color: #edf2f4;
-}
-
+} /*-------  MAPAS  -----------*/
+/*esta incluido en la pagina de _utilidades ;)*/
 h1 {
   font-size: 2.5rem;
-  font-weight: 600;
 }
 
 h2 {
@@ -51,6 +28,7 @@ h3 {
 }
 
 p {
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -70,25 +48,73 @@ p {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   color: #edf2f4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .lista {
   display: flex;
 }
 
-.lista p, .lista a {
+.lista-a, .lista-p {
   text-decoration: none;
-  color: var(--claro2);
+  color: #bdc6d1;
   margin: 5px;
 }
 
-main .frames {
-  padding-top: 5rem;
+@media screen and (max-width: 768px) {
+  .cont_titulo_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header .bg_oscuro {
+  background-color: #2b2d42;
+}
+header .bg_oscuro .cont_links .links {
+  text-transform: uppercase;
+}
+header .bg_oscuro .cont_links .links:hover {
+  color: #e20029;
+  text-decoration: underline;
+  transition: all 500ms ease;
+}
+@media screen and (max-width: 450px) {
+  header .nav_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
+  header .nav_contenedor .logo {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+body .footer {
+  background-color: #2b2d42;
+  color: #edf2f4;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+body .footer p {
+  color: #edf2f4;
+}
+
+main .cont_carrusel .cont_frames {
+  padding-top: 5.1rem;
   filter: grayscale(45%);
   -webkit-filter: grayscale(45%);
   -moz-filter: grayscale(45%);
@@ -96,16 +122,43 @@ main .frames {
 main .card_main {
   font-size: 1.2rem;
   background-color: #edf2f4;
-}
-main .card_group {
-  background-color: #edf2f4;
+  border-color: #8d99ae;
 }
 main .cont_card_group {
   background-color: #8d99ae;
 }
+main .card_group {
+  background-color: #edf2f4;
+}
 
+@media screen and (max-width: 450px) {
+  .cont_frames {
+    margin-top: 6vh;
+  }
+  .cont_frames .frames {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .card_main .cont_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 main .cont_imgpr_nosotros {
   background-image: url(https://th.bing.com/th/id/R.ed811a2196fe81ef116b118092441a01?rik=Id4qNwP7l8AJmw&riu=http%3a%2f%2fyilink-medical.com%2fcn%2fimages%2fpantner.jpg&ehk=PrpLhJ68h9nINapitwRsrXGC%2b6ARzsi34WKGw%2bZTyCw%3d&risl=&pid=ImgRaw&r=0);
+}
+main .cont_card_nosotros .titulo_card_nosotros {
+  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   main .cont_card_nosotros {
@@ -116,66 +169,76 @@ main .cont_imgpr_nosotros {
 main .cont_imgpr_marcas {
   background-image: url(https://th.bing.com/th/id/R.ce3179c91c285c1c15dae57c894681aa?rik=aCt3kdAvaAdiNg&pid=ImgRaw&r=0);
 }
+main .card_marcas:hover {
+  transition: all 400ms ease;
+  background-color: rgba(82, 70, 70, 0.267);
+  cursor: pointer;
+}
+main .card_marcas:hover h3 {
+  color: #edf2f4;
+  transition: all 400ms ease-out;
+}
 
-.cont_imgpr_servicios {
+main .cont_imgpr_servicios {
   background-image: url(https://th.bing.com/th/id/R.c0bb46589ef49269669be82f04c206de?rik=Hmg%2fsFyckt6Wzg&riu=http%3a%2f%2ftalleresalvarezmotor.com%2fwp-content%2fuploads%2f2021%2f06%2fauto-repair-1024x682-1.jpg&ehk=%2bG3Nvl8eYZGCCMDr8SUzG224YgMqlZ5ISAo3vB7nTHk%3d&risl=&pid=ImgRaw&r=0);
 }
 
-.cont_imgpr_contacto {
-  background-image: url(https://www.ke.com.pk/assets/uploads/2016/06/Contact-us.jpg);
+main .cont_imgpr_contacto {
+  background-image: url(https://th.bing.com/th/id/R.839c6cb93f6fa3f2d4212c8184e2a3fa?rik=1tTiAzw55n8Rfw&riu=http%3a%2f%2fcocinasintegralesgioserman.com%2fimages%2fcontactanos.jpg&ehk=vKTNLyWEz2fcTipKiD6H0tqO5tr8wAtZrB6w1C1IXDI%3d&risl=&pid=ImgRaw&r=0);
 }
-
-.cont_form {
+main .cont_form {
   background-color: #bdc6d1;
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 10px 10px 31px 0px rgba(0, 0, 0, 0.75);
-  border: 3px solid var(--claro1);
+  border: 3px solid #bdc6d1;
 }
-
-.cont_contact {
+main .cont_boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .cont_boton .botoncito {
+  background-color: #8d99ae;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+main .cont_boton .botoncito:hover {
+  background-color: #bdc6d1;
+  transition: all 200ms ease;
+}
+main .cont_contact {
   display: flex;
   background-color: #bdc6d1;
   justify-content: space-evenly;
+  border-radius: 5px;
 }
-
-.info_contact {
+main .cont_contact .cont_mapa {
+  display: flex;
+}
+main .cont_contact .cont_mapa .mapa {
+  border-radius: 5px;
+}
+main .cont_contact .info_contact {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
 
-.nombres_contacto {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.cont_boton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.botoncito {
-  background-color: var(--claro1);
-  color: var(--body);
-  width: 10rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.cont_mapa {
-  display: flex;
-}
-
 @media screen and (max-width: 450px) {
+  .mapa {
+    width: 265px;
+  }
   .footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
@@ -184,25 +247,9 @@ main .cont_imgpr_marcas {
     justify-content: center;
     align-items: center;
   }
-  .info_contact {
+  .cont_contact .info_contact {
     padding-top: 1rem;
   }
 }
 
-<<<<<<< HEAD
 /*# sourceMappingURL=styles.css.map */
-=======
-
-@media screen and (max-width: 450px){
-    .nav_contenedor{
-        display: flex;
-        flex-direction: column;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
->>>>>>> 2daPreEntrega

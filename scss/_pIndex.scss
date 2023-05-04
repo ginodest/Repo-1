@@ -1,22 +1,43 @@
 main{
-    .frames{
-        padding-top: 5rem;
-        filter: grayscale(45%);
-        -webkit-filter: grayscale(45%);
-        -moz-filter: grayscale(45%);
+    .cont_carrusel{
+        .cont_frames{
+            padding-top: 5.1rem;
+            filter: grayscale(45%);
+            -webkit-filter: grayscale(45%);
+            -moz-filter: grayscale(45%);
+        }
     }
+    
     .card_main{
         font-size: 1.2rem;
-        background-color: $body;
+        background-color: $body;  
+        border-color: $claro1;
+    }
+    .cont_card_group{
+        background-color: $claro1;
+
     }
     .card_group{
         background-color: $body;
     }
-    .cont_card_group{
-        background-color: $claro1;
+}
+@media screen and (max-width: 450px){
+    .cont_frames{
+        margin-top: 6vh;
+        .frames{
+            height: 200px;
+        }
     }
 }
-
+@media screen and (max-width: 768px){
+    .card_main{
+        @include flexxboxx(center,center,column);
+        text-align: center;
+        .cont_card{
+            @include flexxboxx(center,center,column);
+        }
+    }
+}
 
 
 
