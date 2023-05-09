@@ -251,5 +251,40 @@ main .cont_contact .info_contact {
     padding-top: 1rem;
   }
 }
+main .cont_404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+main .cont_404 h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+}
+main .cont_404 h2 {
+  text-transform: uppercase;
+  padding: 1rem;
+}
+main .cont_404 a {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #edf2f4;
+  text-decoration: none;
+  background-color: #2b2d42;
+  border-radius: 10px;
+  padding: 3px;
+}
+main .cont_404 a:hover {
+  transition: all 300ms ease;
+  background-color: #a3142c;
+}
+@media screen and (max-width: 600px) {
+  main .img-404 {
+    width: 80%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
